@@ -1,15 +1,20 @@
 Date-Holidays-BY
 
-Determine Belarus official holidays and business days.
+Determine Belarus official holidays and business days 2017-2018
+
 
 INSTALLATION
 
 To install this module, run the following commands:
 
-    perl Build.PL
-    ./Build
-    ./Build test
-    ./Build install
+	perl Build.PL
+	./Build
+	./Build test
+	./Build install
+
+Or using cpanminus:
+
+	cpanm Date::Holidays::BY
 
 
 SUPPORT AND DOCUMENTATION
@@ -20,20 +25,9 @@ After installing, you can find documentation for this module with the perldoc co
 
 You can also look for information at:
 
-    GitHub
-        https://github.com/nalobin/Date-Holidays-BY
+    GitHub https://github.com/nalobin/Date-Holidays-BY
+    MetaCPAN https://metacpan.org/pod/Date::Holidays::BY
 
-    Search CPAN
-        http://search.cpan.org/dist/Date-Holidays-BY
-
-    CPAN Request Tracker:
-        http://rt.cpan.org/NoAuth/Bugs.html?Dist=Date-Holidays-BY
-
-    AnnoCPAN, annotated CPAN documentation:
-        http://annocpan.org/dist/Date-Holidays-BY
-
-    CPAN Ratings:
-        http://cpanratings.perl.org/d/Date-Holidays-BY
 
 COPYRIGHT AND LICENCE
 
