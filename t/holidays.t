@@ -1,7 +1,7 @@
 #!perl -T
 
 use utf8;
-use Test::More tests => 4;
+use Test::More tests => 7;
 
 BEGIN {
 	use_ok( 'Date::Holidays::KZ', qw( holidays ) );
