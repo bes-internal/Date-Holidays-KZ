@@ -13,7 +13,7 @@ Date::Holidays::BY
     use Date::Holidays::BY qw( is_holiday holidays is_business_day );
 
     binmode STDOUT, ':encoding(UTF-8)';
-   
+
     my ( $year, $month, $day ) = ( localtime )[ 5, 4, 3 ];
     $year  += 1900;
     $month += 1;
@@ -21,12 +21,12 @@ Date::Holidays::BY
     if ( my $holidayname = is_holiday( $year, $month, $day ) ) {
         print "Today is a holiday: $holidayname\n";
     }
-    
+
     my $ref = holidays( $year );
     while ( my ( $md, $name ) = each %$ref ) {
         print "On $md there is a holiday named $name\n";
     }
-    
+
     if ( is_business_day( 2012, 03, 11 ) ) {
         print "2012-03-11 is business day on weekend\n";
     }
@@ -55,16 +55,18 @@ use Time::Piece;
 use List::Util qw/ first /;
 
 
-my $HOLIDAYS_VALID_SINCE = 2017; # TODO
+my $HOLIDAYS_VALID_SINCE = 2017; # TODO add all old
 my $BUSINESS_DAYS_VALID_SINCE = 2017;
 
 # sources:
 #   https://ru.wikipedia.org/wiki/Праздники_Белоруссии
 
+# internal date formatting alike ISO 8601: MMDD
+
 my @REGULAR_HOLIDAYS = (
     {
         name => 'Новый год',
-		days => '0101',
+        days => '0101',
     },
     {
         name => 'Международный женский день',
@@ -94,23 +96,25 @@ my @REGULAR_HOLIDAYS = (
         name => 'Рождество Христово (католическое Рождество)',
         days => '1225',
     },
+    # Radonitsa - second tuesday after orthodox Easter - Easter is celebrated on the first Sunday after the spring full moon. The full moon is... oh no. Goes to HOLIDAYS_SPECIAL
 );
-
 
 my %HOLIDAYS_SPECIAL = (
     2017 => [ qw( 0102 0424 0425 0508 1106) ],
     2018 => [ qw( 0102 0309 0416 0417 0430 0702 1224 1231) ],
+    2019 => [ qw( 0506 0507 0508 1108) ],
 );
-
 
 my %BUSINESS_DAYS_ON_WEEKENDS = (
     2017 => [ qw( 0121 0429 0506 1104) ],
     2018 => [ qw( 0120 0303 0414 0428 0707 1222 1229) ],
+	2019 => [ qw( 0504 0511 1116) ],
 );
 
 my %SHORT_BUSINESS_DAYS = (
     2017 => [ qw( 0106 0307 0429 0506 1104) ],
     2018 => [ qw( 0307 0508 1106) ],
+    2019 => [ qw( 0307 0430 0506 0702 1106 1224) ],
 );
 
 
