@@ -7,6 +7,7 @@ README
 cpanfile
 dist.ini
 lib/Date/Holidays/BY.pm
+t/author-test-version.t
 t/business_days.t
 t/holiday.t
 t/holidays.t

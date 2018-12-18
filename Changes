@@ -1,3 +1,6 @@
+0.2019.3	2018-12-18
+	* PAUSE not indexing without module version
+
 0.2019.2	2018-12-18
 	* correct build process and dependencies and readme
 

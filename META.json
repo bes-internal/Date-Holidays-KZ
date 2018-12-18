@@ -19,6 +19,12 @@
             "ExtUtils::MakeMaker" : "0"
          }
       },
+      "develop" : {
+         "requires" : {
+            "Test::More" : "0",
+            "Test::Version" : "1"
+         }
+      },
       "runtime" : {
          "requires" : {
             "Carp" : "0",
@@ -41,11 +47,12 @@
    "release_status" : "stable",
    "resources" : {
       "repository" : {
+         "type" : "git",
          "url" : "https://github.com/bes-internal/Date-Holidays-BY.git",
          "web" : "https://github.com/bes-internal/Date-Holidays-BY"
       }
    },
-   "version" : "0.2019.2",
+   "version" : "0.2019.3",
    "x_generated_by_perl" : "v5.24.3",
    "x_serialization_backend" : "JSON::XS version 3.04"
 }
