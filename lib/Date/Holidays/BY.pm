@@ -1,5 +1,4 @@
 package Date::Holidays::BY;
-
 # ABSTRACT: Determine Belorussian official holidays and business days.
 
 =encoding utf8
