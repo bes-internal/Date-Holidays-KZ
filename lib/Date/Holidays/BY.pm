@@ -1,8 +1,5 @@
 package Date::Holidays::BY;
-
-$Date::Holidays::BY::VERSION = '0.2019.3';
-
-# ABSTRACT: Determine Belorussian official holidays and business days.
+our $VERSION = '0.2019.4'; # VERSION
 
 =encoding utf8
 
@@ -245,10 +242,29 @@ sub _get_date_key {
     return sprintf '%02d%02d', $month, $day;
 }
 
+=head1 LICENSE
+
+This software is copyright (c) 2019 by Vladimir Varlamov.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+Terms of the Perl programming language system itself
+
+a) the GNU General Public License as published by the Free
+   Software Foundation; either version 1, or (at your option) any
+   later version, or
+b) the "Artistic License"
+
+=cut
+
+
 =head1 AUTHOR
 
 Vladimir Varlamov, C<< <bes.internal@gmail.com> >>
 
 =cut
+
+
 
 1;
