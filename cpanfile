@@ -3,6 +3,7 @@ requires "Exporter" => "0";
 requires "List::Util" => "0";
 requires "Time::Piece" => "0";
 requires "base" => "0";
+requires "perl" => "5.008";
 requires "strict" => "0";
 requires "utf8" => "0";
 requires "warnings" => "0";
