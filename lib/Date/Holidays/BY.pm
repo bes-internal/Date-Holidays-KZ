@@ -1,5 +1,5 @@
 package Date::Holidays::BY;
-our $VERSION = '0.2019.4'; # VERSION
+our $VERSION = '0.2019.5'; # VERSION
 
 =encoding utf8
 
