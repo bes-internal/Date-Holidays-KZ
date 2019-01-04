@@ -59,7 +59,7 @@ INACCURATE_TIMES_SINCE after this year dates of holidays and working day shift a
 
 =cut
 
-$HOLIDAYS_VALID_SINCE = 2018; # TODO add all old
+$HOLIDAYS_VALID_SINCE = 2017; # TODO add all old
 $INACCURATE_TIMES_SINCE = 2020;
 
 
@@ -126,12 +126,14 @@ my @REGULAR_HOLIDAYS = (
 );
 
 my %HOLIDAYS_SPECIAL = (
+    2017 => [ qw( 0103 0320 0508 0707 0901 1218 1219 ) ],
     2018 => [ qw( 0821 0309 0508 0430 0831 1203 1218 1231 ) ],
     2019 => [ qw( 0325 0510 0708 1202 0811 ) ],
 );
 
 
 my %BUSINESS_DAYS_ON_WEEKENDS = (
+    2017 => [ qw( 0318 0701 ) ],
     2018 => [ qw( 0303 0505 0825 1229 ) ],
     2019 => [ qw( 0504 ) ],
 );
