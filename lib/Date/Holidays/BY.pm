@@ -1,5 +1,5 @@
 package Date::Holidays::BY;
-our $VERSION = '0.2019.5'; # VERSION
+our $VERSION = '0.2019.6'; # VERSION
 
 =encoding utf8
 
@@ -50,7 +50,6 @@ our @EXPORT_OK = qw(
     is_business_day
     is_short_business_day
 );
-use vars qw($strict $HOLIDAYS_VALID_SINCE $INACCURATE_TIMES_SINCE);
 
 =head2 $Date::Holidays::BY::HOLIDAYS_VALID_SINCE, $Date::Holidays::BY::INACCURATE_TIMES_SINCE
 
@@ -59,8 +58,8 @@ INACCURATE_TIMES_SINCE after this year dates of holidays and working day shift a
 
 =cut
 
-$HOLIDAYS_VALID_SINCE = 2017; # TODO add all old
-$INACCURATE_TIMES_SINCE = 2020;
+our $HOLIDAYS_VALID_SINCE = 2017; # TODO add all old
+our $INACCURATE_TIMES_SINCE = 2020;
 
 
 =head2 $Date::Holidays::BY::strict
@@ -70,7 +69,7 @@ Default is 0.
 
 =cut
 
-$strict = 0;
+our $strict = 0;
 
 use Carp;
 use Time::Piece;
