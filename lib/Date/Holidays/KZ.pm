@@ -1,5 +1,5 @@
 package Date::Holidays::KZ;
-our $VERSION = '0.2020.0'; # VERSION
+our $VERSION = '0.2021.0'; # VERSION
 
 =encoding utf8
 
@@ -58,7 +58,7 @@ INACCURATE_TIMES_SINCE after this year dates of holidays and working day shift a
 
 =cut
 
-our $HOLIDAYS_VALID_SINCE = 2017; # TODO add all old
+our $HOLIDAYS_VALID_SINCE = 2016; # TODO add all old
 our $INACCURATE_TIMES_SINCE = 2021;
 
 
@@ -125,6 +125,7 @@ my @REGULAR_HOLIDAYS = (
 );
 
 my %HOLIDAYS_SPECIAL = (
+    2016 => [ qw( 0104 0307 0502 0510 0912 1219 ) ],
     2017 => [ qw( 0103 0320 0508 0707 0901 1218 1219 ) ],
     2018 => [ qw( 0821 0309 0508 0430 0831 1203 1218 1231 ) ],
     2019 => [ qw( 0325 0510 0708 1202 0811 ) ],
@@ -133,6 +134,7 @@ my %HOLIDAYS_SPECIAL = (
 
 
 my %BUSINESS_DAYS_ON_WEEKENDS = (
+    2016 => [ qw( 0305 ) ],
     2017 => [ qw( 0318 0701 ) ],
     2018 => [ qw( 0303 0505 0825 1229 ) ],
     2019 => [ qw( 0504 ) ],
